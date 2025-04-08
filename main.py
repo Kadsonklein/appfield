@@ -1,6 +1,12 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import Screen
+import requests
+import os
+import certifi
+
+
+os.environ["SSL_CERT_FILE"] = certifi.where()
 
 class HomePage(Screen):
     pass
